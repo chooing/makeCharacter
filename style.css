@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
+
 /* animaion */
 @keyframes 눈동자 {
     0% { left: calc(50% - 58px); }
@@ -6,6 +8,47 @@
     75%{ left: 75px; }
     100% { left: calc(50% - 58px); }
 }
+
+@keyframes 귀왼쪽 {
+    from {
+        transform: rotate(-65deg);
+    }
+
+    to {
+        transform: rotate(-75deg) translateX(-20px) translateY(-10px);
+    }
+}
+@keyframes 귀오른쪽 {
+    from {
+        transform: rotate(65deg);
+    }
+
+    to {
+        transform: rotate(75deg) translateX(20px) translateY(-10px);
+    }
+}
+@keyframes 꽃사슴 {
+    from {left: -100%;}
+    to {left: 50px;}
+}
+@keyframes YOJO {
+    from {right: -100%;opacity: 1;}
+    to {right: 50px; opacity: 1;}
+}
+
+@keyframes 등장 {
+    from {
+        transform: scale(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1) rotate(720deg);
+        opacity: 1;
+        
+    }
+}
+
 
 
 /* reset */
@@ -23,19 +66,44 @@ body{
     --bgcolor:#FFD93D;
 }
 
-
 /* design */
-body{ background-color: var(--bgcolor); }
+body{ 
+    background-color: var(--bgcolor); 
+    overflow: hidden;
+}
+
+body::before, body::after{
+    display: block;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 230px;
+    position: absolute;
+}
+
+body::before{
+    content: '꽃사슴';
+    left: 50px;
+    top: 0px;
+    animation: 꽃사슴 0.5s 1;
+}
+body::after{
+    content: 'YOJO';
+    right: 50px;
+    bottom: 20px;
+    opacity: 0;
+    animation: YOJO 0.5s 0.5s 1 forwards;
+    line-height: 1;
+}
 
 .dear{
-    /* margin-left: 50%;
-    transform: translateX(-50%); */
     width: 670px; 
     margin: 0 auto; 
     margin-top: 190px;
     position: relative;
+    opacity: 0;
+    animation: 등장 1.5s 1 1s forwards;
 }
-
 
 /* 화관 */
 .dear .crown-wrap{
@@ -178,6 +246,7 @@ body{ background-color: var(--bgcolor); }
     border-radius: 126% 11% 23% 99% / 110% 84% 33% 25%;
     transform: rotate(-65deg);
     left: -70px;
+    animation: 귀왼쪽 1s 2.7s infinite alternate;
 }
 .dear .ear.left::after{
     left: 31px;
@@ -188,6 +257,7 @@ body{ background-color: var(--bgcolor); }
 .dear .ear.right{
     border-radius: 11% 126% 99% 23% / 84% 110% 25% 33%;
     transform: rotate(65deg);
+    animation: 귀오른쪽 1s 2.7s infinite alternate;
     right: -70px;
 }
 
@@ -238,7 +308,7 @@ body{ background-color: var(--bgcolor); }
     background-color: var(--point);
     top: 80px;
     left: calc(50% - 58px);
-    animation: 눈동자 3.5s infinite ease-in-out;
+    animation: 눈동자 3.5s 2.7s infinite ease-in-out;
 }
 
 .face .eye.left{left: 128px;}
