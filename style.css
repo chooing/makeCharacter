@@ -169,7 +169,10 @@ body::after{
     margin-top: -30px;
     border-radius: 0% 100% 0% 100%;
     transform: rotate(-35deg);
+    transition: all .4s;
 }
+.crown-wrap .flower .petal:hover::after{background-color: lightpink;}
+
 .crown-wrap .flower .petal.one{ transform: rotate(36deg);}
 .crown-wrap .flower .petal.two{ transform: rotate(72deg);}
 .crown-wrap .flower .petal.three{ transform: rotate(108deg);}
@@ -309,6 +312,21 @@ body::after{
     top: 80px;
     left: calc(50% - 58px);
     animation: 눈동자 3.5s 2.7s infinite ease-in-out;
+}
+.face .eye::after{
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    left: calc(50% - 150px);
+    top: -300px;
+    background-color: #b77f54;
+    transition: top .7s;
+}
+.face .eye:hover::after{    
+    top: -170px;
 }
 
 .face .eye.left{left: 128px;}
