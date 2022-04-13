@@ -4,7 +4,7 @@ https://chooing.github.io/makeCharacter/
 
 # 작업 스케치 및 완성
 일러스트로 러프한 캐릭터 초안 제작 후 작업하며 다듬어갔습니다. 
-![스케치](https://user-images.githubusercontent.com/96187560/163179804-14c41810-5bbf-4129-bce5-e36df10592ed.PNG)
+![스케치](https://user-images.githubusercontent.com/96187560/163180423-1164a6ce-08e1-45d1-9712-70ee2742771e.PNG)
 
 완성본
 ![yojo](https://user-images.githubusercontent.com/96187560/163180000-01c3dd5c-0143-43d2-90c8-9708212383ff.png)
