@@ -2,8 +2,12 @@
 html과 css를 사용하여 캐릭터를 만들었습니다.
 https://chooing.github.io/makeCharacter/
 
-# 스케치
+# 작업 스케치 및 완성
 일러스트로 러프한 캐릭터 초안 제작 후 작업하며 다듬어갔습니다. 
+![스케치](https://user-images.githubusercontent.com/96187560/163179804-14c41810-5bbf-4129-bce5-e36df10592ed.PNG)
+
+완성본
+![yojo](https://user-images.githubusercontent.com/96187560/163180000-01c3dd5c-0143-43d2-90c8-9708212383ff.png)
 
 # 사용한 CSS 속성
 캐릭터를 제작하며 사용한 속성입니다. 최대한 실무에서 자주 사용하지 않는 속성이나 웹사이트 제작 때 사용량이 적은 것을 위주로 사용해 보고자 했습니다.
