@@ -178,7 +178,7 @@ body::after{
 }
 
 
-/* 
+
 .crown-wrap .flower .petal.one{ transform: rotate(36deg);}
 .crown-wrap .flower .petal.two{ transform: rotate(72deg);}
 .crown-wrap .flower .petal.three{ transform: rotate(108deg);}
@@ -188,7 +188,7 @@ body::after{
 .crown-wrap .flower .petal.seven{ transform: rotate(-108deg);}
 .crown-wrap .flower .petal.eight{ transform: rotate(-72deg);}
 .crown-wrap .flower .petal.nine{ transform: rotate(-36deg);}
-.crown-wrap .flower .petal.ten{ transform: rotate(0deg);} */
+.crown-wrap .flower .petal.ten{ transform: rotate(0deg);}
 
 
 /* 뿔 */
